@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%
+}
+
+header,nav, {
+    display: block
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+html,body,div,span,a,header,nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline
+}
+
+html {
+    box-sizing: border-box
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #565656;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding-top: 74px
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #1e88e5
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 3px 10px 3px #e3e3e3
+}
+
+.header__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    height: 74px
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none
+}
+
+.header .logo img {
+    display: block;
+    max-width: 100%
+}
+
+.header .logo span {
+    margin-left: 11px;
+    color: #565656;
+    font-size: 24px
+}
+
+.header .nav {
+    position: absolute;
+    top: 50%;
+    right: 350px;
+    transform: translateY(-30%)
+}
+
+.header.is-general .nav {
+    right: 0
+}
+
+.container {
+    position: relative;
+    width: 1030px;
+    margin: 0 auto
+}
+
+.nav {
+    text-align: center;
+    transition: all .3s ease-in-out;
+    will-change: transform;
+    z-index: 1
+}
+
+.nav a, .nav a:visited {
+    margin-right: 38px;
+    color: #565656;
+    font-size: 15px;
+    text-decoration: none
+}
+
+.nav a:last-child,
+.nav a:visited:last-child {
+    margin-right: 0
+}
